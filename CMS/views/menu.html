@@ -1,0 +1,106 @@
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<header class="header">
+
+<a class="logo" href="http://localhost:8081/CMS/index.php"><img src="Manage%20Students_files/edusec.png" alt="" height="22px" width="120px;"></a>
+<nav class="navbar navbar-static-top" role="navigation">
+
+<a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</a>
+<div class="navbar-right">
+
+<ul class="nav navbar-nav">
+<li class="module-menu">
+	<form action="/CMS/index.php?r=site%2Flanguage" method="post" style="margin-top: 10px;">
+<input name="_method" type="hidden">
+<input name="_csrf" value="MUd6b1ZMX1lDMzIEBxRuKgEGLCsfPG0WQBU1CC51NzNBBEsfDw4QHA==" type="hidden">	<div class="col-sm-6 no-padding">
+	<label for="language">Select Language</label>	</div>
+	<div class="col-sm-6" style="padding-left:7px;">
+	<select class="form-control" name="language" onchange="this.form.submit()" style="padding: 5px;">
+<option value="en" selected="selected">English</option>
+<option value="gu">Gujarati (ગુજરાતી)</option>
+<option value="hi">Hindi (हिन्दी)</option>
+<option value="fr">French (français)</option>
+</select>	</div>
+
+	</form></li>
+<li class="dropdown module-menu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Main Menu">
+		<i class="fa fa-th"></i>
+    </a>
+	
+<ul class="dropdown-menu">
+    <li>
+        <ul class="menu">
+			            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=default%2Findex"><i class="fa fa-cogs text-aqua fa-2x"></i><h4> Configuration</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=dashboard%2Fdefault%2Findex"><i class="fa fa-dashboard text-green fa-2x"></i> <h4>Dashboard</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=course%2Fdefault%2Findex"><i class="fa fa-graduation-cap text-yellow fa-2x"></i> <h4>Course</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=student%2Fdefault%2Findex"><i class="fa fa-users text-orange fa-2x"></i> <h4>Student</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=employee%2Fdefault%2Findex"><i class="fa fa-user text-purple fa-2x"></i> <h4>Employee</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=fees%2Fdefault%2Findex"><i class="fa fa-money text-green fa-2x"></i> <h4>Fees</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=report%2Fdefault%2Findex"><i class="fa fa-line-chart text-blue fa-2x"></i> <h4>Report Center</h4></a>            </li>
+						            <li>
+				<a href="http://localhost:8081/CMS/index.php?r=rights%2Fassignment%2Findex"><i class="fa fa-user-secret text-orange fa-2x"></i> <h4>User Rights</h4></a>            </li>
+			        </ul>
+    </li>
+</ul>
+</li>
+<!-- Notifications: style can be found in dropdown.less -->
+<li class="dropdown notifications-menu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-bell-o"></i>
+        <span class="label label-warning">0</span>
+    </a>
+    <ul class="dropdown-menu">
+
+        <li class="header">You have No notifications</li>
+	    </ul>
+</li>
+
+    <li class="dropdown user user-menu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user"></i>
+            <span>admin <i class="caret"></i></span>
+        </a>
+        <ul class="dropdown-menu" style="margin-right:10px">
+            <!-- User image -->
+            <li class="user-header bg-light-blue">
+                <img src="Manage%20Students_files/no-photo.png" class="img-circle" alt="User Image">
+
+                <p style="font-size: 18px;">
+                    admin                </p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body" style="display:none">
+                <div class="col-xs-6 no-padding">
+		    <a class="btn btn-default btn-flat" href="http://localhost:8081/CMS/index.php?r=student%2Fstu-master%2Findex" style="font-size:13px">View Profile</a>                </div>
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+                <div class="pull-left">
+		    <a class="btn btn-default btn-flat" href="http://localhost:8081/CMS/index.php?r=user%2Fchange" style="font-size:12px">Change Password</a>                </div>
+                <div class="pull-right">
+                    <a class="btn btn-default btn-flat" href="http://localhost:8081/CMS/index.php?r=site%2Flogout" data-method="post" style="font-size:12px">Sign out</a>                </div>
+            </li>
+        </ul>
+    </li><!-- User Account: style can be found in dropdown.less -->
+
+</ul>
+</div>
+</nav>

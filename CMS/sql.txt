@@ -1,0 +1,93 @@
+select fid,firstname,lastname,department, designation,category  from faculty     ////middlename not present
+
+select course_name,course_id,course_credit from course   /////course alias not present in the db
+
+
+
+
+mess sql queries---------------
+
+1. For inserting data into database.
+    Insert into rebate (rid,apply_date,from_date,to_date,description)
+
+	values(INSERT INTO 'cms'.'rebate' ('rid', 'apply_date', 'from_date', 'to_date','description') VALUES ($_POST("r_id1"), `$_POST("a_date")`, `$_POST("f_date")`, `$_POST("t_date")`,`$_POST("desc")`));  /////description is not present in present database
+	
+   Insert into student_rebate(sid,r_id,status) values(`$_POST(r_id1)`,`$_POST("s_id1")`,`unchecked`);
+   
+   
+   
+2. for viewing the status of the requested rebate
+   
+   select description ,status from rebate where rid in(select r_id form student_rebate where sid=$_POST("student_id"));
+
+
+3. for editing the rebate request
+    for getting all thee requests till now
+	
+	select description, apply_date from rebate where sid=+$_POST("s_id1");
+
+	when he/she clicks on the specific request-----then all the elements of that specific request will be shown on a form
+	$r_id2=$_POST("r_id1");
+    $apply =select apply_date from rebate where rid=+$_POST("r_id1");
+ $from =select from_date from rebate where rid=+$_POST("r_id1");
+ $to =select to_date from rebate where rid=+$_POST("r_id1");
+ $desc1 =select description from rebate where rid=+$_POST("r_id1");
+ 
+ after the student submits the button then the update query will be run as follows----
+ 
+ 
+ -----we can run here the insert request again with the rid set  
+ UPDATE rebate 
+ SET apply_date=$_POST("a_date1"), from_date=$_POST("f_date1"),to_date=$_POST("t_date1"),description=$_POST("desc1");
+ where rid =+$r_id2;
+ 
+ 
+ 
+ 
+ 
+ 4.  to delete request
+           
+     for getting all thee requests till now
+	
+	select description, apply_date from rebate where sid=+$_POST("s_id1");
+	
+	when he/she clicks on the specific request-----then all the elements of that specific request will be shown on a form
+	here we get the request_id(rid)
+   
+   
+   sql query-------
+   delete from rebate where rid=+$_POST("r_id1");
+   delete from student_rebate where r_id=+$_POST("r_id1");
+   
+		   
+ 
+ 
+ 
+ 
+ 
+   -------------queries for hostel---------------
+   table(room)--room_no
+   room_resources-- room_no, rid, count
+   resources--- resource_id, resource_name
+   hostel--- hostel_no
+   hostel_room---hostel_no,room_no
+   
+   
+   1. edit rooms resources(room_no,resource_id) 
+   
+   query-- update room_resources
+             SET count=$_POST("n_count")
+			 where room_no= $_POST("room_no") and rid=$r_id;
+			 
+   2. roomwise resource distribution
+   
+   query-- select hostel_no
+   
+   
+   
+   
+   
+   
+   
+   
+   

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Semester Registration </title>
+
+<style>
+body{
+      
+}
+</style>
+
+<script type="text/javascript">
+alert("Hello");
+	function  validate(){
+		var fee;
+		if ( document.getElementById('mode').value == '' )
+			alert('Select  Fee Payment Mode !');
+		if( document.getElementById('amount').value == "")
+			alert('Enter amount!');
+		if ( document.getElementById('type').value == '' )
+			alert('Select Fee Payment Type !');
+	}
+</script>
+</head>
+<body>
+
+<center>
+<b>Student ID</b> : </br>
+<b>BATCH</b> : 	</br>
+<b>SEMESTER</b> :	</br>
+
+</br></br></br></br></br></br></br>
+
+<h2> Enter the following details  </h2>
+
+<form action="submit.php" name="form"  method="post" >
+
+<p> Mode of Fee Payment 
+<select name= "mode" id="mode">
+
+        <option value=""></option>
+        <option value="NEFT"> NEFT </option>
+        <option value="Demand Draft">  Demand Draft </option> 
+        <option value="Net Banking"> Net Banking </option>       
+        
+ </select> </p>
+
+<p> Fee Type
+<select name="type" id="type">
+
+        <option value=""></option>
+        <option value="Academic"> Academic </option>
+        <option value="Mess">  Mess </option> 
+               
+        
+ </select> </p>
+
+Enter amount paid : <input type = "text" id="amount" name = "amount"> </br></br>
+Proof of Payment : <input type="file" name="upload" value="Upload" onClick=" ">
+</br> </br> </br>
+
+
+<input type="button" name="SubmitButton" value="Submit" onclick="validate();">
+<input type="reset" value="Reset">
+<br /><br /><br /><br /><br /><br /><br />
+
+</form>
+</center>
+
+</body>
+
+</html>

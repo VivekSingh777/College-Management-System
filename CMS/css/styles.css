@@ -1,0 +1,373 @@
+/*Fonts Start*/
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url(../fonts/Oxygen-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url(../fonts/Oxygen-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+    font-family: 'Oxygen','OpenSans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#index a[href="index.html"],#why_iiitv a[href="why_iiitv.html"],#achievements a[href="achievements.html"],#broucher a[href="broucher.html"],#curriculum a[href="curriculum.html"],#department a[href="department.html"],#placement_pro a[href="placement_pro.html"],#placement_team a[href="placement_team.html"],#policy a[href="policy.html"],#reachiiitv a[href="reachiiitv.html"],#department .academics,#curriculum .academics,#achievements .academics,#policy .for-student,#broucher .for-companies,#placement_pro .for-companies,#reachiiitv .contactus,#placement_team .contactus{
+    border-bottom: 4px solid rgb(9, 25, 33);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: white;
+    text-decoration: none;
+     background-color: transparent;
+}
+
+ /*#head{
+        background-color: dodgerblue;
+        }*/
+
+/*Bootstrap Nav Starts*/
+.navbar-inverse {
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0,1);
+    width: 100% !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 1.15em;
+}
+
+.navbar-header {
+    float:none;
+}
+.navbar-default {
+    background-color: #FFFFFF;
+    border-color: #e7e7e7;
+    z-index: 999;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.sticky-wrapper{
+background-color: dodgerblue;
+}
+
+.navbar-nav > li > .dropdown-menu > li:hover{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.navbar-nav > li > .dropdown-menu > li{
+    display: block;
+}
+.navbar-nav > li > .dropdown-menu {
+  padding: 0;
+    top:55px;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+border-bottom: 4px solid rgb(9, 25, 33);
+}
+
+/*
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  border-bottom: 4px solid rgba(9, 25, 33,0.6);
+  transition: border-bottom 0.2s ease-in;
+}
+*/
+
+.navbar-default .navbar-nav > li > a {
+border-bottom: 4px solid transparent;
+    transition: border-bottom 0.2s ease-in;
+}
+
+
+
+
+/*Bootstrap nav Ends*/
+
+.dropdown-menu > li > a {
+    line-height: 2.1;
+}
+
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*Custom Styles Starts*/
+
+.wrapper {
+    width: 100%;
+}
+
+.content-wrapper {
+/*    background-color: rgba(200,200,200,1);*/
+/*    background-image: url("../images/photo-1428677361686-f9d23be145c9.jpg");*/
+    width: 100%;
+/*    margin-top: 140px;*/
+/*    height: 65%;*/
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-collapse{
+background-color: orange;
+}
+
+.navbar > li > a{
+    color:black;
+}
+
+/*Brand Starts*/
+.brand {
+    font-size: 1.7em;
+    float: none;
+    display: inline-block;
+    padding: 15px 0;
+    color: rgba(100,100,100,1);
+    /*color: #fff;*/
+}
+.brand:hover{
+    color: rgb(9, 25, 33);
+    text-decoration: none;
+}
+
+.iiitv {
+    font-size: 17px;
+}
+.pc {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@media (max-width:850px) {
+    .brand{
+       font-size: 1.3em;
+    }
+    .iiitv {
+    font-size: 13px;
+}
+}
+
+/*Brands Ends*/
+
+
+/*Footer Starts*/
+
+.footer {
+background-color: rgba(9,17,21,1);
+text-align: center;
+color: white;
+padding: 40px 0;
+}
+
+
+.footer ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.footer a{
+
+    color: #c0c0c0;
+    border: none;
+
+}
+
+.footer a:hover{
+       text-decoration: none;
+        color: white;
+}
+
+.footer h2{
+    font-size: 2em;
+    display: inline-block;
+    border-bottom: 2px dotted rgb(220,220,220);
+    padding-bottom: 3px;
+    color: rgb(220,220,220);
+    font-weight: bold;
+}
+
+.footer h2:hover{
+    color: white;
+}
+.footer-brand {
+    font-size: 3em;
+/*    border-bottom: 2px dotted rgb(200,200,200);*/
+    padding: 0.5em 0 0.8em 0;
+}
+/*Footer Ends*/
+.test {
+    height: 100%;
+
+}
+
+.carousel-control.left,.carousel-control.right{
+   background: transparent;
+    background-repeat: repeat-x;
+   top: 45%;
+}
+
+.carousel-control{
+    font-size: 50px;
+}
+
+
+
+#myCarousel {
+/*    height: 100%;*/
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height:450px;
+}
+
+.contact-info p{
+    font-size: 1.5em;
+}
+
+
+
+.contact-info,.about-pc,.ext-links {
+    margin-top: 20px;
+    color: rgb(220,220,220);
+}
+
+
+
+.footer-container>div {
+        padding: 10px 30px;
+}
+
+
+.content-container {
+    padding:50px 0;
+    width: 80%;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+.content-container p{
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+.content-container h1{
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color:  rgb(1, 84, 134);
+    display: inline-block;
+    border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+
+.dir-desk p {
+    line-height: 1.8;
+}
+
+.dir-pic {
+    margin:5px 25px 25px 20px;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.dir-desk {
+    text-align: left;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.main-desk {
+        background-color: rgb(9, 25, 33);
+         color: rgba(255,255,255,0.8);
+}
+
+.main-desk h1{
+    padding-bottom: 5px;
+    color: rgba(255,255,255,0.85);
+    display: inline-block;
+    margin-top: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+}
+
+.dir-container {
+    width: 80%;
+    padding: 50px 0;
+    display: inline-block;
+}
+
+.pp li{
+    list-style:none;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+
+.pp-container {
+    background-color:whitesmoke;
+}
+
+
+
+#department >.content-wrapper>.container-fluid,#why_iiitv >.content-wrapper>.container-fluid, #policy >.content-wrapper>.container-fluid{
+    background-color: whitesmoke;
+}
+
+.placement-p-content {
+    text-align: left;
+}
+
+.left-align {
+    text-align: left;
+}
