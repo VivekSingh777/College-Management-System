@@ -42,16 +42,21 @@ Step 1: After successful installation of XAMPP, copy the CMS folder from
 CD to htdocs folder.
 Htdocs can be reached following;
 My Computer--> C drive--> Xampp --> htdocs
+
 Step 2: Open Xampp control panel
+
 Step 3: Start apache server and MySql
+
 Step 4: Go to your browser and type localhost/CMS/installDB.php
 This creates the database
+
 Step 5: On Xampp control panel click on MySql admin button.
 PhpMyAdmin will open in your browser, click on cms db, select sql.
 Copy/paste the INsert.sql file to command line and hit go. If sql error
 Occurs, then copy one table at a time.
 If all Above 5 steps run successfully only then go step 6 else contact
 TEAM 3.
+
 Step 6: Go to your browser and type localhost/CMS/index.php
 
 For ADMIN UserName = Team3
